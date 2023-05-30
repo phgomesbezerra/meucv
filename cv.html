@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <style>
+    body {
+      background-color: #111426;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #FFF;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    
+    .section {
+      margin-bottom: 40px;
+    }
+    
+    .section h2 {
+      cursor: pointer;
+      color: #FFF;
+      font-size: 20px;
+      margin: 0;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #1C2248;
+    }
+    
+    .section-content {
+      display: none;
+      background-color: #FFF;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    .contact-info {
+      margin-top: 20px;
+    }
+    
+    .contact-info p {
+      margin: 0;
+      color: #333;
+    }
+    
+    .contact-info a {
+      color: #0000CD;
+      text-decoration: none;
+      margin-left: 5px;
+      border-bottom: 1px dotted #0000CD;
+      transition: border-bottom 0.3s ease;
+    }
+    
+    .contact-info a:hover {
+      border-bottom: 1px dotted #1C2248;
+    }
+    
+    .whatsapp {
+      color: #0000CD;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #1C2248;
+      color: #FFF;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #111426;
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    .image-container img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PEDRO HENRIQUE GOMES BEZERRA</h1>
+    
+    <div class="section">
+      <h2 onclick="toggleSection('objective')">OBJETIVO</h2>
+      <div id="objective" class="section-content">
+        <p>Trabalhar na área com alta performance de resultados e excelência em atendimento, na parte operacional ou gestão!</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 onclick="toggleSection('experience')">EXPERIÊNCIA PROFISSIONAL</h2>
+      <div id="experience" class="section-content">
+        <h3>Metrópole Derivado de Petróleo LTDA</h3>
+        <p>Maio 2001 - Setembro 2015</p>
+        <p>Gerente</p>
+        <ul>
+          <li>Formação de equipe de vendas com alta performance de resultados.</li>
+          <li>Envolvimento total no projeto da loja de conveniência com resultados crescentes.</li>
+        </ul>
+        
+        <h3>Ipanema Comércio e Serviços de Derivados de Petróleo Ltda</h3>
+        <p>Novembro 2015 - Outubro 2018</p>
+        <p>Gerente</p>
+        <ul>
+          <li>Elevação da galonagem de 193 mil litros para 240 mil litros através de novas formas de atendimento e prospecção de clientes.</li>
+          <li>Trabalho de alto rendimento no segmento da troca de óleo com elevação de faturamento.</li>
+        </ul>
+        
+        <h3>M Luz Comércio de Petróleo Ltda</h3>
+        <p>31/03/2020 - 30/11/2020</p>
+        <p>Gerente</p>
+        <ul>
+          <li>Gestão de equipe com 14 pessoas na pista para uma venda média de 30 mil litros por dia.</li>
+          <li>Domínio total do negócio.</li>
+        </ul>
+        
+        <h3>Qs Comércio de Derivados de Petróleo</h3>
+        <p>30/11/2020 - 30/04/2022</p>
+        <p>Gerente Administrativo</p>
+        <ul>
+          <li>Gestão total do negócio, aumentando volume de vendas na loja e na pista de abastecimento através de metas e motivação.</li>
+          <li>Capacidade de comunicação, relacionamento interpessoal e negociação.</li>
+        </ul>
+        
+        <h3>Cartec Automotivo (Simplo)</h3>
+        <p>01/05/2022 - 31/09/2021</p>
+        <p>Vendedor de Software</p>
+        <p>Venda técnica de sistema automotivo para reparadores em toda América Latina.</p>
+        
+        <h3>Leve Mobilidade</h3>
+        <p>12/10/2022 - Atual</p>
+        <p>Supervisor Operacional</p>
+        <p>Supervisão de equipe nas operações de produção, prevenção e manutenção de equipamentos.</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 onclick="toggleSection('contact')">CONTATO</h2>
+      <div id="contact" class="section-content">
+        <div class="contact-info">
+          <p>Email: pedro.postoipanema@gmail.com</p>
+          <p>WhatsApp: <a href="https://wa.me/5581981573457" class="whatsapp">85 98157-3457</a></p>
+          <p>Endereço: Rua Frei Caneca 1071, Bairro Paupina, Fortaleza CE</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 onclick="toggleSection('skills')">HABILIDADES</h2>
+      <div id="skills" class="section-content">
+        <ul>
+          <li>Comunicação excepcional e habilidades de rede</li>
+          <li>Trabalho bem sucedido em um ambiente de equipe, bem como de forma independente.</li>
+          <li>Gestão eficaz de projetos e habilidades de liderança.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="image-container">
+      <a href="https://www.google.com/search?q=POSTOS+SOBRAL+E+PAL%C3%81CIO&sxsrf=APwXEdew258HsVTJXzXcfPAZZFNcTvmlDQ:1685403908124&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj0rfzp2pv_AhWSJrkGHfOYADUQ_AUoA3oECAEQBQ&biw=1366&bih=617&dpr=1#imgrc=QrQ3MHGmcfl02M" target="_blank"><img src="https://example.com/posto-gasolina.jpg" alt="Posto de Gasolina"></a>
+      <a href="http://www.sobralepalacio.com.br/conteudo.htm" target="_blank"><img src="https://example.com/loja-conveniencia.jpg" alt="Loja de Conveniência"></a>
+    </div>
+    
+  </div>
+  
+  <script>
+    function toggleSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.style.display = section.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
+
+
+
+
